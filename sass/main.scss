@@ -1,0 +1,119 @@
+ /*COLORS*/
+
+ $color-primary: #007bff;
+ $color-primary-dark: #031927;
+ $color-primary-opacity: rgba(0, 0, 0, 0.6);
+ $color-secondary: rgb(235, 233, 233);
+ $color-secondary--light:rgb(255, 253, 253);
+
+/*HOVER EFFECT*/
+@mixin hover {
+    color: $color-secondary;
+    text-decoration: none;
+}   
+
+
+ /* RESET */
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Quicksand', 'Poppins', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+ }
+
+ body {
+     background: $color-secondary;
+ }
+
+ /* NAVBAR */
+
+ .nav-item-edit {
+     color: $color-secondary--light;
+     padding: 15px;
+     font-size: 16px;
+     padding-left: 20px;
+     margin-top: 1.5%;
+ }
+
+ .navbar-edit {
+     width: 100%;
+
+     a {
+         color: $color-secondary--light;
+
+         &:hover {
+             @include hover;
+         }
+
+         span {
+             color: $color-secondary--light;
+
+             &:hover {
+                @include hover;
+             }
+         }
+     }
+ }
+
+ .input-wrap {
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: stretch;
+     margin-top: 0.2%;
+ }
+
+ /* SLIDER CAROUSEL*/
+
+ .carousel-edit {
+     min-width: 100%;
+     height: 350px;
+     overflow: hidden;
+ }
+
+ .carousel-item-edit {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .slider-image-edit {
+     width: 100%;
+     height: auto;
+ }
+
+ //  CARD
+
+ .card {
+     -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+     box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+ }
+
+ .card-img--edit {
+     min-width: 100%;
+     overflow: hidden;
+     height: 180px;
+ }
+
+ .ovl {
+     opacity: 0;
+     transition: 1s;
+
+     &:hover {
+         opacity: 1;
+         background: $color-primary-opacity;
+     }
+ }
+
+ /* FOOTER */
+
+ .footer {
+     background: $color-primary-dark;
+     color: $color-secondary--light;
+ }
+
+ .u-align-right {
+     display: flex;
+     justify-content: flex-end;
+ }

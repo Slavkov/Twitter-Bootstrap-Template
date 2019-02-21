@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap_final",
+  "version": "1.0.0",
+  "description": "Homepage for twitter",
+  "main": "index.js",
+  "scripts": {
+    "compile-bootstrap:sass":"node-sass sass/bootstrap.scss css/bootstrap.css",
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Martin Slavkov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
